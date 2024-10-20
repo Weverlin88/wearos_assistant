@@ -1,0 +1,32 @@
+name: wearos_assistant
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_tts: ^3.6.3   # Text-to-Speech (TTS)
+  flutter_local_notifications: ^13.0.0  # Notificações locais
+
+
+  # Correção: Usar a versão mais recente do pacote 'wear'
+  wear: ^1.1.0
+
+
+  # Gerenciar permissões no app (microfone, bluetooth, etc.)
+  permission_handler: ^11.0.0
+
+  # Icones estilo Cupertino para iOS
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
